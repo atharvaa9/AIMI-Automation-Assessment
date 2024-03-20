@@ -1,15 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Image Selection Page</title>
-        <link rel="stylesheet" href="dist/css/styles.css">
-    </head>
-    <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Image Grid</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/dist/css/styles.css">
+</head>
+<body>
+    <div class="centered-content">
         <div class="container">
-            <div class="row image-grid"></div>
+    <div class="row">
+      <!-- Repeat this block for the number of images -->
+      <div class="col">
+        <label class="image-checkbox">
+          <input type="checkbox" />
+          <div class="image-display" style="background-image: url('https://acre-image-collections.s3.amazonaws.com/image-6578722caea701702392364_medium.jpg');"></div>
+        </label>
+        <label class="image-checkbox">
+            <input type="checkbox" />
+            <div class="image-display" style="background-image: url('https://acre-image-collections.s3.amazonaws.com/image-6578722caea701702392364_medium.jpg');"></div>
+          </label>
+          <label class="image-checkbox">
+            <input type="checkbox" />
+            <div class="image-display" style="background-image: url('https://acre-image-collections.s3.amazonaws.com/image-6578722caea701702392364_medium.jpg');"></div>
+          </label>
+          <label class="image-checkbox">
+            <input type="checkbox" />
+            <div class="image-display" style="background-image: url('https://acre-image-collections.s3.amazonaws.com/image-6578722caea701702392364_medium.jpg');"></div>
+          </label>
+      </div>
+      <!-- ... -->
+      <div class="col">
+        <label class="image-checkbox">
+          <input type="checkbox" />
+          <div class="image-display" style="background-image: url('https://acre-images.s3.amazonaws.com/image-5ac62b9e561041522936734_medium.jpeg');"></div>
+        </label>
+        <label class="image-checkbox">
+            <input type="checkbox" />
+            <div class="image-display" style="background-image: url('https://acre-images.s3.amazonaws.com/image-5ac62b9e561041522936734_medium.jpeg');"></div>
+          </label>
+          <label class="image-checkbox">
+            <input type="checkbox" />
+            <div class="image-display" style="background-image: url('https://acre-images.s3.amazonaws.com/image-5ac62b9e561041522936734_medium.jpeg');"></div>
+          </label>
+          <label class="image-checkbox">
+            <input type="checkbox" />
+            <div class="image-display" style="background-image: url('https://acre-images.s3.amazonaws.com/image-5ac62b9e561041522936734_medium.jpeg');"></div>
+          </label>
+      </div>
+      <div class="col">
+        <label class="image-checkbox">
+          <input type="checkbox" />
+          <div class="image-display" style="background-image: url('https://acre-images.s3.amazonaws.com/image-5acac631504581523238449_medium.jpeg');"></div>
+        </label>
+        <label class="image-checkbox">
+            <input type="checkbox" />
+            <div class="image-display" style="background-image: url('https://acre-images.s3.amazonaws.com/image-5acac631504581523238449_medium.jpeg');"></div>
+          </label>
+          <label class="image-checkbox">
+            <input type="checkbox" />
+            <div class="image-display" style="background-image: url('https://acre-images.s3.amazonaws.com/image-5acac631504581523238449_medium.jpeg');"></div>
+          </label>
+          <label class="image-checkbox">
+            <input type="checkbox" />
+            <div class="image-display" style="background-image: url('https://acre-images.s3.amazonaws.com/image-5acac631504581523238449_medium.jpeg');"></div>
+          </label>
+      </div>
+      <div class="col">
+        <label class="image-checkbox">
+          <input type="checkbox" />
+          <div class="image-display" style="background-image: url('https://acre-image-collections.s3.amazonaws.com/image-65787222618211702392354_medium.jpg');"></div>
+        </label>
+        <label class="image-checkbox">
+            <input type="checkbox" />
+            <div class="image-display" style="background-image: url('https://acre-image-collections.s3.amazonaws.com/image-65787222618211702392354_medium.jpg');"></div>
+          </label>
+          <label class="image-checkbox">
+            <input type="checkbox" />
+            <div class="image-display" style="background-image: url('https://acre-image-collections.s3.amazonaws.com/image-65787222618211702392354_medium.jpg');"></div>
+          </label>
+          <label class="image-checkbox">
+            <input type="checkbox" />
+            <div class="image-display" style="background-image: url('https://acre-image-collections.s3.amazonaws.com/image-65787222618211702392354_medium.jpg');"></div>
+          </label>
+      </div>
+    </div>
+
         </div>
-        <script src="dist/js/script.js"></script>
-    </body>
+    </div>
+  <script src="js/script.js"></script>
+</body>
 </html>

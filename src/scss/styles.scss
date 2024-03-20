@@ -1,46 +1,44 @@
-@import "~bootstrap/scss/bootstrap";
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; // This makes sure the body takes at least the full height of the viewport
+    margin: 0; // Removes default margin
+  }
 
-$image-urls: (
-    "url('https://acre-image-collections.s3.amazonaws.com/image-6578722caea701702392364_medium.jpg')",
-);
-
-.container {
-    padding: 2rem;
-}
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    @include media-breakpoint-down(md) {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-    @include media-breakpoint-down(sm) {
-        grid-template-columns: 1fr;
-    }
-}
-
-@include component('image-box');
-
-.image-box {
-    @extend %image-box;
-
-    &:after {
-        content: "";
-        display: block;
-        padding-bottom: 100%; 
-    }
-
-    img {
-        width: 100%; 
-        height: 100%;
-        object-fit: cover;  
-    }
-
-    input:checked + label {
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+.image-checkbox {
         
-        outline: 2px solid #007bff;  
-        outline-offset: -2px;
-    }
-
-}
+        display: inline-block; 
+        margin: 0.5rem; 
+        
+        input[type="checkbox"] {
+          display: none; 
+        }
+        
+        .image-display {
+          width: 22rem; // Sets the width of the image
+          height: 22rem; // Sets the height of the image
+          background-size: cover; // Ensures the image covers the area without being stretched
+          background-position: center; // Centers the background image
+          display: block; // Ensures that the div behaves like a block element
+          position: relative;
+          overflow: hidden; // Ensures the background image does not spill out of the container
+        }
+        
+        input[type="checkbox"]:checked + .image-display {
+          outline: 2px solid blue; // Highlights the selected image
+        }
+      }
+      
+  
