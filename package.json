@@ -1,5 +1,38 @@
 {
+
+  "name": "image-selection-page",
+
+  "version": "1.0.0",
+
+  "description": "Webpage for selecting images",
+
+  "author": "Atharva Parte",
+
+  "license": "MIT",
+
+  "scripts": {
+
+    "dev": "grunt watch",
+
+    "build": "grunt",
+
+    "test": "echo No tests defined yet"
+
+  },
+
   "dependencies": {
-    "bootstrap": "^5.3.0-alpha1"
+
+    "bootstrap": "^5.3.0-alpha1",
+
+    "grunt": "^1.6.1",
+
+    "grunt-contrib-copy": "^1.0.0",
+
+    "grunt-contrib-sass": "^2.0.0",
+
+    "grunt-contrib-watch": "^1.1.0"
+
   }
+
 }
+
